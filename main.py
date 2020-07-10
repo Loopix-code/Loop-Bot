@@ -92,7 +92,7 @@ async def unban(ctx, user, *reason):
 			await ctx.guild.unban(i.user, reason = reason)
 			await ctx.send(f"{user} à été unban.")
 			return
-	#Ici on sait que lutilisateur na pas ete trouvé
+	#Ici on sait que lutilisateur n'a pas ete trouvé
 	await ctx.send(f"L'utilisateur {user} n'est pas dans la liste des bans")
 
 @bot.command()
