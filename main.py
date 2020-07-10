@@ -50,6 +50,9 @@ async def on_member_remove(member):
     await channel.send(f"😥{member.mention} s'est caché dans les brousailles.\nA une prochaine fois !")
     
     
+@bot.event
+async def on_typing(channel, user, when):
+    await channel.send(f"{user.name} a commencé à écrire dans ce channel le {when}.")
 
 #_________________________________________________________________________
 # 
