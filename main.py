@@ -51,7 +51,7 @@ async def on_member_remove(member):
     
     
 @bot.event
-async def on_typing(channel, user, when):
+async def on_typing(channel, user, when,):
     await channel.send(f"{user.name} a commencé à écrire dans ce channel le {when}.")
 
 #_________________________________________________________________________
@@ -236,7 +236,7 @@ async def private(ctx):
 
 
 
-bot.run("NzI4NjQxMzIxNTUxNjU5MTQ5.XwhOmA.2Uo5WqNrbSVOtVtf4lBxweOufok")
+bot.run("NzI4NjQxMzIxNTUxNjU5MTQ5.XwhQbQ.xw84aLjZI4JlyEB6M-MRtUKARh0")
 
 
 
